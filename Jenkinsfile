@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/s-eliif/EasyDevOps.git'
+                checkout scm
             }
         }
 
@@ -16,13 +16,19 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat 'dotnet build frontend/EasyDevOps/EasyDevOps.csproj'
+                bat 'dotnet build frontend/EasyDevOps/EasyDevOps.csproj --configuration Release'
             }
         }
 
-        stage('Security Check') {
+        stage('Security Test') {
             steps {
                 bat 'dotnet list frontend/EasyDevOps/EasyDevOps.csproj package --vulnerable'
+            }
+        }
+
+        stage('DevOps Feedback') {
+            steps {
+                echo 'Feedback: build en security checks afgerond'
             }
         }
     }
