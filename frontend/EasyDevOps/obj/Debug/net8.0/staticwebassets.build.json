@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qedSqfkHWbJRo5+zF9cPh7mXSmzw1AgtxzpFKoCEvSE=",
+  "Hash": "KPxtxuzOZ/OgqsL2nA3EvCzR9CpVYGz8ko3mOGM7Sr4=",
   "Source": "EasyDevOps",
   "BasePath": "_content/EasyDevOps",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Administrator\\EasyDevOps\\frontend\\EasyDevOps\\wwwroot\\images\\ITMfoto.png",
+      "SourceId": "EasyDevOps",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Administrator\\EasyDevOps\\frontend\\EasyDevOps\\wwwroot\\",
+      "BasePath": "_content/EasyDevOps",
+      "RelativePath": "images/ITMfoto.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\ITMfoto.png"
     },
     {
       "Identity": "C:\\Users\\Administrator\\EasyDevOps\\frontend\\EasyDevOps\\wwwroot\\js\\site.js",

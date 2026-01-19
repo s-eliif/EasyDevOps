@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Administrator\\EasyDevOps\\frontend\\EasyDevOps\\wwwroot\\images\\ITMfoto.png",
+      "PackagePath": "staticwebassets\\images\\ITMfoto.png"
+    },
+    {
       "Id": "C:\\Users\\Administrator\\EasyDevOps\\frontend\\EasyDevOps\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
