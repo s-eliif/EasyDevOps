@@ -1,14 +1,28 @@
 pipeline {
     agent any
+
     stages {
-        stage('Build') {
+        stage('Checkout') {
             steps {
-                echo 'Build gestart'
+                git branch: 'main', url: 'https://github.com/s-eliif/EasyDevOps.git'
             }
         }
-        stage('Test') {
+
+        stage('Restore') {
             steps {
-                echo 'Tests uitgevoerd'
+                bat 'dotnet restore frontend/EasyDevOps/EasyDevOps.csproj'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                bat 'dotnet build frontend/EasyDevOps/EasyDevOps.csproj'
+            }
+        }
+
+        stage('Security Check') {
+            steps {
+                bat 'dotnet list frontend/EasyDevOps/EasyDevOps.csproj package --vulnerable'
             }
         }
     }
